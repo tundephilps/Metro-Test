@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillEnroll Landing Page</title>
+    <link href="index.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid gap-5 border border-bottom-dark shadow-lg" style="padding-inline: 6rem;">
+            <a class="navbar-brand" href="#"><img src="/images/skillhernel_logo.png" class="img-fluid" alt="skillhernel_logo" style="width: 120px;"/></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-sm-between navbar-brand" id="navbarNav">
+                <ul class="navbar-nav fw-bold">
+                    <li class="nav-item dropdown navbar-brand shadow-lg borderShado px-2 bg-body borderr">
+                        <a class="nav-link dropdown-toggle btn btn-danger btn-md text-white" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Courses
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <li><a class="dropdown-item" href="#">Full-Time</a></li>
+                          <li><a class="dropdown-item" href="#">Part-Time</a></li>
+                          <li><a class="dropdown-item" href="#">Online</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown navbar-brand">
+                        <a class="nav-link dropdown-toggle btn btn-md" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Category
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <li><a class="dropdown-item" href="#">Business</a></li>
+                          <li><a class="dropdown-item" href="#">Health</a></li>
+                          <li><a class="dropdown-item" href="#">Technology</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item navbar-brand"><a class="nav-link btn btn-md" href="#">Reviews</a></li>
+                    <input type="text" class="form-control border rounded-pill" style="width: 350px;" placeholder="What do you want to learn?">
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" height="50" width="50" viewBox="0,0,256,256"  class="btn btn-danger rounded-pill item-center ml-n4">
+                        <g fill-opacity="0.99999" fill="white" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M21,3c-9.37891,0 -17,7.62109 -17,17c0,9.37891 7.62109,17 17,17c3.71094,0 7.14063,-1.19531 9.9375,-3.21875l13.15625,13.125l2.8125,-2.8125l-13,-13.03125c2.55469,-2.97656 4.09375,-6.83984 4.09375,-11.0625c0,-9.37891 -7.62109,-17 -17,-17zM21,5c8.29688,0 15,6.70313 15,15c0,8.29688 -6.70312,15 -15,15c-8.29687,0 -15,-6.70312 -15,-15c0,-8.29687 6.70313,-15 15,-15z"></path></g></g>
+                        </svg>
+
+                </ul>
+                    <ul class="navbar-nav gap-4">
+                    <li class="nav-item"><a class="btn btn-outline-primary btn-md" href="#">Log In</a></li>
+                    <li class="nav-item"><a class="btn btn-danger btn-md shadow-lg" href="#">Apply Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero-section" class="container">
+        <div class="container" style="width: 45rem; margin: 0px; padding: 0 50px;">
+            <h1 class="display-5 fw-bold"><span class="textc">Online Learning </span> Designed For Real Life</h1>
+            <p class="lead font-weight">Move your career forward without putting life on hold.<br> Our programs will help you find inspiration that fits into your routine.</p>
+            <span class="d-flex justify-content-between">
+                <button type="button" class="btn btn-danger p-2 fw-bold">Explore All Courses</button>
+                <button type="button" class="btn btn-outline-light px-5 py-2 text-dark bg-white fw-bold">Log In</button>
+            </span>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section id="search-section" class="bg-white">
+        <div class="container">
+            <h2 class="mb-4 fw-bold">Search for courses</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <input type="text" class="form-control border border-1 borderr" placeholder="What do you want to learn?">
+                </div>
+                <div class="col-md-3 mb-3">
+                    <select class="form-select border border-1 fs-6 borderr">
+                        <option selected>Category</option>
+                        <option>Business</option>
+                        <option>Health</option>
+                        <option>Technology</option>
+                    </select>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <select class="form-select border border-1 borderr fs-6">
+                        <option>Study Option</option>
+                        <option>Full-Time</option>
+                        <option>Part-Time</option>
+                        <option>Online</option>
+                    </select>
+                </div>
+                <div class="col-md-2" id="#">
+                    <button class="p-2 border border-4 rounded buttonp w-100 d-flex justify-content-center gap-1 align-items-center pinkc">Search
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" height="15" viewBox="0,0,256,256">
+                        <g fill-opacity="0.99999" fill="hotpink" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M21,3c-9.37891,0 -17,7.62109 -17,17c0,9.37891 7.62109,17 17,17c3.71094,0 7.14063,-1.19531 9.9375,-3.21875l13.15625,13.125l2.8125,-2.8125l-13,-13.03125c2.55469,-2.97656 4.09375,-6.83984 4.09375,-11.0625c0,-9.37891 -7.62109,-17 -17,-17zM21,5c8.29688,0 15,6.70313 15,15c0,8.29688 -6.70312,15 -15,15c-8.29687,0 -15,-6.70312 -15,-15c0,-8.29687 6.70313,-15 15,-15z"></path></g></g>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Courses Section -->
+    <section class="py-5">
+        <div class="container position-relative">
+            <h3 class="mb-4 fw-bold">Popular Courses</h3>
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators" style="bottom: -25%;">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="bg-primary" style="--bs-text-opacity: 1;" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="bg-primary" style="--bs-text-opacity: .5;" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="active bg-primary" style="--bs-text-opacity: .5;" aria-label="Slide 3"></button>
+                </div>
+                <div id="itemsCarousel" class="carousel slide">
+                    <div class="carousel-inner">
+                        <!-- First Carousel Item -->
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="card h-100">
+                                        <div class="card-body border border-4 bg-white">
+                                            <h5 class="card-title w-75 fw-bold">Executive Master of Business Administration (EMBA) in Public Health</h5>
+                                            <p class="card-text">This programme is designed to provide insights into understanding and managing the public health systems.</p>
+                                            <div class="container p-0 m-0" style="width: fit-content;">
+                                                <div class="row pb-sm-5">
+                                                    <ul class="list-unstyled col pb-sm-4">
+                                                        <li class="border border-danger rounded-pill p-2 mb-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="pink" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m5 14l3.5 3.5L19 6.5" color="pink"/></svg>
+                                                            Access to this course
+                                                        </li>
+                                                        <li class="border border-danger rounded-pill p-2 mb-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="pink" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m5 14l3.5 3.5L19 6.5" color="pink"/></svg>
+                                                            Access to Library
+                                                        </li>
+                                                        <li class="border border-danger rounded-pill p-2 mb-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="pink" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m5 14l3.5 3.5L19 6.5" color="pink"/></svg>
+                                                            Learn at your own pace 
+                                                        </li>
+                                                        <li class="border border-danger rounded-pill p-2 mb-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="pink" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m5 14l3.5 3.5L19 6.5" color="pink"/></svg>
+                                                            Test to boost your learning
+                                                        </li>
+                                                        <li class="border border-danger rounded-pill p-2 mb-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="pink" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m5 14l3.5 3.5L19 6.5" color="pink"/></svg>
+                                                            Digital certificate when eligible
+                                                        </li>
+                                                    </ul>
+
+                                                    <div class="col-md-auto d-grid justify-content-between">
+                                                        <div>
+                                                            <h5 style="font-size: small;">Course starts</h5>
+                                                            <h4 class="fw-bold fs-4">Anytime</h4>
+                                                        </div>
+                                                        <div>
+                                                            <h5 style="font-size: small;">Completion time</h5>
+                                                            <h4 class="fw-bold fs-4">2 weeks</h4>
+                                                        </div>
+                                                        <div>
+                                                            <h5 style="font-size: small;">Limited time offer</h5>
+                                                            <h4 class="fw-bold fs-4"> £120 <span class="text-decoration-line-through fs-4">£216</span></h4>
+                                                        </div>
+                                                    </div>
+                                                    
+
+                                                </div>
+                                            </div>
+                                            
+                                            <button class="btn-outline-dark shadow-lg custom-btn text-white w-100 border borderr p-3"><span style="--bs-text-opacity: 2;">View course details</span></button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <div class="card h-100">
+                                        <div class="card-body border border-4 bg-white">
+                                            <h5 class="card-title w-75 fw-bold">Professional Certificate Course in Understanding Accounting Concepts Principles and Theories</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                                            <div class="container p-0 m-0" style="width: fit-content;">
+                                                <div class="row pb-sm-5">
+                                                    <ul class="list-unstyled col">
+                                                        <li class="border border-danger rounded-pill p-2 mb-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="pink" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m5 14l3.5 3.5L19 6.5" color="pink"/></svg>
+                                                            Access to this course
+                                                        </li>
+                                                        <li class="border border-danger rounded-pill p-2 mb-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="pink" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m5 14l3.5 3.5L19 6.5" color="pink"/></svg>
+                                                            Access to Library
+                                                        </li>
+                                                        <li class="border border-danger rounded-pill p-2 mb-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="pink" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m5 14l3.5 3.5L19 6.5" color="pink"/></svg>
+                                                            Learn at your own pace 
+                                                        </li>
+                                                        <li class="border border-danger rounded-pill p-2 mb-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="pink" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m5 14l3.5 3.5L19 6.5" color="pink"/></svg>
+                                                            Test to boost your learning
+                                                        </li>
+                                                        <li class="border border-danger rounded-pill p-2 mb-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="pink" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m5 14l3.5 3.5L19 6.5" color="pink"/></svg>
+                                                            Digital certificate when eligible
+                                                        </li>
+                                                    </ul>
+
+                                                    <div class="col-md-auto d-grid justify-content-between">
+                                                        <div>
+                                                            <h5 style="font-size: small;">Course starts</h5>
+                                                            <h4 class="fw-bold fs-4">Anytime</h4>
+                                                        </div>
+                                                        <div>
+                                                            <h5 style="font-size: small;">Completion time</h5>
+                                                            <h4 class="fw-bold fs-4">2 weeks</h4>
+                                                        </div>
+                                                        <div>
+                                                            <h5 style="font-size: small;">Limited time offer</h5>
+                                                            <h4 class="fw-bold fs-4"> £120 <span class="text-decoration-line-through fs-4">£216</span></h4>
+                                                        </div>
+                                                    </div>
+                                                    
+
+                                                </div>
+                                            </div>
+                                            
+                                            <button class="btn-outline-dark shadow-lg custom-btn text-white w-100 border borderr p-3"><span style="--bs-text-opacity: 2;">View course details</span></button>
+
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Second Carousel Item -->
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="card h-100">
+                                        <div class="card-body border border-4 bg-white">
+                                            <h5 class="card-title w-75 fw-bold">Executive Master of Business Administration (EMBA) in Project Management</h5>
+                                            <p class="card-text">This programme is designed to provide insights into understanding and managing the public health systems.</p>
+                                            <div class="container p-0 m-0" style="width: fit-content;">
+                                                <div class="row pb-sm-5">
+                                                    <ul class="list-unstyled col pb-sm-4">
+                                                        <li class="border border-danger rounded-pill p-2 mb-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="pink" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m5 14l3.5 3.5L19 6.5" color="pink"/></svg>
+                                                            Access to this course
+                                                        </li>
+                                                        <li class="border border-danger rounded-pill p-2 mb-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="pink" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m5 14l3.5 3.5L19 6.5" color="pink"/></svg>
+                                                            Access to Library
+                                                        </li>
+                                                        <li class="border border-danger rounded-pill p-2 mb-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="pink" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m5 14l3.5 3.5L19 6.5" color="pink"/></svg>
+                                                            Learn at your own pace 
+                                                        </li>
+                                                        <li class="border border-danger rounded-pill p-2 mb-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="pink" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m5 14l3.5 3.5L19 6.5" color="pink"/></svg>
+                                                            Test to boost your learning
+                                                        </li>
+                                                        <li class="border border-danger rounded-pill p-2 mb-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="pink" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m5 14l3.5 3.5L19 6.5" color="pink"/></svg>
+                                                            Digital certificate when eligible
+                                                        </li>
+                                                    </ul>
+
+                                                    <div class="col-md-auto d-grid justify-content-between">
+                                                        <div>
+                                                            <h5 style="font-size: small;">Course starts</h5>
+                                                            <h4 class="fw-bold fs-4">Anytime</h4>
+                                                        </div>
+                                                        <div>
+                                                            <h5 style="font-size: small;">Completion time</h5>
+                                                            <h4 class="fw-bold fs-4">2 weeks</h4>
+                                                        </div>
+                                                        <div>
+                                                            <h5 style="font-size: small;">Limited time offer</h5>
+                                                            <h4 class="fw-bold fs-4"> £120 <span class="text-decoration-line-through fs-4">£216</span></h4>
+                                                        </div>
+                                                    </div>
+                                                    
+
+                                                </div>
+                                            </div>
+                                            
+                                            <button class="btn-outline-dark shadow-lg custom-btn text-white w-100 border borderr p-3"><span style="--bs-text-opacity: 2;">View course details</span></button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <div class="card h-100">
+                                        <div class="card-body border border-4 bg-white">
+                                            <h5 class="card-title w-75 fw-bold">Advanced Professional in Leadership and Organizational  Behaviour</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                                            <div class="container p-0 m-0" style="width: fit-content;">
+                                                <div class="row pb-sm-5 pt-lg-4">
+                                                    <ul class="list-unstyled col pb-sm-4">
+                                                        <li class="border border-danger rounded-pill p-2 mb-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="pink" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m5 14l3.5 3.5L19 6.5" color="pink"/></svg>
+                                                            Access to this course
+                                                        </li>
+                                                        <li class="border border-danger rounded-pill p-2 mb-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="pink" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m5 14l3.5 3.5L19 6.5" color="pink"/></svg>
+                                                            Access to Library
+                                                        </li>
+                                                        <li class="border border-danger rounded-pill p-2 mb-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="pink" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m5 14l3.5 3.5L19 6.5" color="pink"/></svg>
+                                                            Learn at your own pace 
+                                                        </li>
+                                                        <li class="border border-danger rounded-pill p-2 mb-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="pink" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m5 14l3.5 3.5L19 6.5" color="pink"/></svg>
+                                                            Test to boost your learning
+                                                        </li>
+                                                        <li class="border border-danger rounded-pill p-2 mb-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="pink" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m5 14l3.5 3.5L19 6.5" color="pink"/></svg>
+                                                            Digital certificate when eligible
+                                                        </li>
+                                                    </ul>
+
+                                                    <div class="col-md-auto d-grid justify-content-between">
+                                                        <div>
+                                                            <h5 style="font-size: small;">Course starts</h5>
+                                                            <h4 class="fw-bold fs-4">Anytime</h4>
+                                                        </div>
+                                                        <div>
+                                                            <h5 style="font-size: small;">Completion time</h5>
+                                                            <h4 class="fw-bold fs-4">2 weeks</h4>
+                                                        </div>
+                                                        <div>
+                                                            <h5 style="font-size: small;">Limited time offer</h5>
+                                                            <h4 class="fw-bold fs-4"> £120 <span class="text-decoration-line-through fs-4">£216</span></h4>
+                                                        </div>
+                                                    </div>
+                                                    
+
+                                                </div>
+                                            </div>
+                                            
+                                            <button type="button" class="btn-outline-dark shadow-lg custom-btn text-white w-100 border borderr p-3"><span style="--bs-text-opacity: 2;">View course details</span></button>
+
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carousel Controls -->
+                    <button class="carousel-control-previ carousel-control-prev" type="button" data-bs-target="#itemsCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#itemsCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Explore Categories Section -->
+         <!-- Explore Shorts Courses Section -->
+    <section class="pt-sm-5 pb-md-3 bg-light">
+        <div class="container px-0">
+            <button type="button" class="d-flex align-items-center gap-2 mx-auto btn btn-outline-light px-2 py-3 border border-1 shadow-lg text-dark bg-white fw-bold"><span style="font-size: small;">View all courses</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="20" viewBox="0 0 12 24"><defs><path id="weuiArrowOutlined0" fill="currentColor" d="m7.588 12.43l-1.061 1.06L.748 7.713a.996.996 0 0 1 0-1.413L6.527.52l1.06 1.06l-5.424 5.425z"/></defs><use fill-rule="evenodd" href="#weuiArrowOutlined0" transform="rotate(-180 5.02 9.505)"/></svg>
+            </button>
+            <div class="row g-4 pt-5">
+                <div class="col-md-3 position-relative">
+                    <div class="category-box py-5 border-4 border-dark shadow-lg h-100" style="background-color: #FFC72C;">
+                        <h1 class="fw-bolder w-50">Explore shorts courses</h1>
+                        <p class="fs-6">Explore our newest programmes, focused on delivering in-demand skills</p>
+                        <button class="btn btn-outline-light px-2 py-3 border border-1 shadow-lg text-dark bg-white fw-bold w-100">Explore</button>
+                    </div>
+                    <img class="explore position-absolute"/>
+                </div>
+                <div class="col-md-3">
+                    <div class="category-box border-4 border-dark shadow-lg pt-0 px-0 pb-2 position-relative h-100">
+                        <img src="/images/offimg1.jpeg" alt="employee" class="w-100 border border-2 borderr"/>
+                        <div class="d-flex gap-5 catep">
+                            <span class="border rounded-pill bg-white d-flex px-2 py-1 gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="#e97cb9" d="M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.7 15.7 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2" class="align-middle"/></svg>
+                            <h6 style="font-size: small;">Online</h6>
+                            </span>
+                            <span class="border rounded-pill bg-white d-flex px-2 py-1 gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><g fill="none"><path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="#e97cb9" d="M16 3a1 1 0 0 1 .993.883L17 4v1h2a2 2 0 0 1 1.995 1.85L21 7v12a2 2 0 0 1-1.85 1.995L19 21H5a2 2 0 0 1-1.995-1.85L3 19V7a2 2 0 0 1 1.85-1.995L5 5h2V4a1 1 0 0 1 1.993-.117L9 4v1h6V4a1 1 0 0 1 1-1m3 9H5v7h14zm0-5H5v3h14z" class="align-middle"/></g></svg>
+                            <h6 style="font-size: small;">12 Months</h6>
+                            </span>
+                        </div>
+                        <div class="px-2">
+                            <h4 class="fw-bold fs-6">Executive Master of Business Administration (EMBA) in Media and Entertainment</h4>
+                            <p class="fs-6">The programme's objective is to equip you with a deeper understanding of entertainment management and media...</p>
+                            <h4 class="fw-bold fs-4 pb-sm-4"> £120 <span class="text-decoration-line-through fs-4">£216</span></h4>
+                            <button type="button" class="btn-outline-dark shadow-lg custom-btn text-white w-100 border borderr p-3"><span style="font-size: small;">See course details</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="category-box border-4 border-dark shadow-lg pt-0 px-0 pb-2 position-relative h-100">
+                        <img src="/images/offimg2.jpeg" alt="employee" class="w-100 border border-2 borderr"/>
+                        <div class="d-flex gap-5 catep">
+                            <span class="border rounded-pill bg-white d-flex px-2 py-1 gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="#e97cb9" d="M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.7 15.7 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2" class="align-middle"/></svg>
+                            <h6 style="font-size: small;">Online</h6>
+                            </span>
+                            <span class="border rounded-pill bg-white d-flex px-2 py-1 gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><g fill="none"><path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="#e97cb9" d="M16 3a1 1 0 0 1 .993.883L17 4v1h2a2 2 0 0 1 1.995 1.85L21 7v12a2 2 0 0 1-1.85 1.995L19 21H5a2 2 0 0 1-1.995-1.85L3 19V7a2 2 0 0 1 1.85-1.995L5 5h2V4a1 1 0 0 1 1.993-.117L9 4v1h6V4a1 1 0 0 1 1-1m3 9H5v7h14zm0-5H5v3h14z" class="align-middle"/></g></svg>
+                            <h6 style="font-size: small;">12 Months</h6>
+                            </span>
+                        </div>
+                        <div class="px-2">
+                            <h4 class="fw-bold fs-6">Master of Arts (MA) in Project Management</h4>
+                            <p style="font-size: medium;">The programme's objective is to equip you with a deeper understanding of media and entertainment</p>
+                            <h4 class="fw-bold fs-4 pb-sm-5"> £120 <span class="text-decoration-line-through fs-4">£216</span></h4>
+                            <button class="btn-outline-dark shadow-lg custom-btn text-white border borderr p-3 w-100"><span style="font-size: small;">See course details</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="category-box border-4 border-dark shadow-lg pt-0 px-0 pb-2 position-relative h-100">
+                        <img src="/images/offimg1.jpeg" alt="employee" class="w-100 border border-2 borderr"/>
+                        <div class="d-flex gap-5 catep">
+                            <span class="border rounded-pill bg-white d-flex px-2 py-1 gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="#e97cb9" d="M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.7 15.7 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2" class="align-middle"/></svg>
+                            <h6 style="font-size: small;">Online</h6>
+                            </span>
+                            <span class="border rounded-pill bg-white d-flex px-2 py-1 gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><g fill="none"><path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="#e97cb9" d="M16 3a1 1 0 0 1 .993.883L17 4v1h2a2 2 0 0 1 1.995 1.85L21 7v12a2 2 0 0 1-1.85 1.995L19 21H5a2 2 0 0 1-1.995-1.85L3 19V7a2 2 0 0 1 1.85-1.995L5 5h2V4a1 1 0 0 1 1.993-.117L9 4v1h6V4a1 1 0 0 1 1-1m3 9H5v7h14zm0-5H5v3h14z" class="align-middle"/></g></svg>
+                            <h6 style="font-size: small;">12 Months</h6>
+                            </span>
+                        </div>
+                        <div class="px-2">
+                            <h4 class="fw-bold fs-6">Executive Master of Business Administration (EMBA) in Media and Entertainment</h4>
+                            <p class="fs-6">The programme's objective is to equip you with a deeper understanding of media and entertainment...</p>
+                            <h4 class="fw-bold fs-4 pb-sm-4"> £120 <span class="text-decoration-line-through fs-4">£216</span></h4>
+                            <button type="button" class="btn-outline-dark shadow-lg custom-btn text-white w-100 border borderr p-3"><span style="font-size: small;">See course details</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Explore Degree Courses Section -->
+    <section class="pb-md-3 bg-light">
+        <div class="container px-0">
+            <div class="row g-4 pt-5">
+                <div class="col-md-3 position-relative text-white">
+                    <div class="category-box py-5 border-4 border-dark shadow-lg h-100" style="background-color: #0000FF;">
+                        <h1 class="fw-bolder w-50">Explore Degree courses</h1>
+                        <p class="fs-6">Explore our newest programmes, focused on delivering in-demand skills</p>
+                        <button class="btn btn-outline-light px-2 py-3 border border-1 shadow-lg text-dark bg-white fw-bold w-100">Explore</button>
+                    </div>
+                    <img class="explore position-absolute"/>
+                </div>
+                <div class="col-md-3">
+                    <div class="category-box border-4 border-dark shadow-lg pt-0 px-0 pb-2 position-relative h-100">
+                        <img src="/images/offimg1.jpeg" alt="employee" class="w-100 border border-2 borderr"/>
+                        <div class="d-flex gap-5 catep">
+                            <span class="border rounded-pill bg-white d-flex px-2 py-1 gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="#e97cb9" d="M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.7 15.7 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2" class="align-middle"/></svg>
+                            <h6 style="font-size: small;">Online</h6>
+                            </span>
+                            <span class="border rounded-pill bg-white d-flex px-2 py-1 gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><g fill="none"><path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="#e97cb9" d="M16 3a1 1 0 0 1 .993.883L17 4v1h2a2 2 0 0 1 1.995 1.85L21 7v12a2 2 0 0 1-1.85 1.995L19 21H5a2 2 0 0 1-1.995-1.85L3 19V7a2 2 0 0 1 1.85-1.995L5 5h2V4a1 1 0 0 1 1.993-.117L9 4v1h6V4a1 1 0 0 1 1-1m3 9H5v7h14zm0-5H5v3h14z" class="align-middle"/></g></svg>
+                            <h6 style="font-size: small;">12 Months</h6>
+                            </span>
+                        </div>
+                        <div class="px-2">
+                            <h4 class="fw-bold fs-6">Executive Master of Business Administration (EMBA) in Media and Entertainment</h4>
+                            <p class="fs-6">The programme's objective is to equip you with a deeper understanding of entertainment management and media...</p>
+                            <h4 class="fw-bold fs-4 pb-sm-4"> £120 <span class="text-decoration-line-through fs-4">£216</span></h4>
+                            <button type="button" class="btn-outline-dark shadow-lg custom-btn text-white w-100 border borderr p-3"><span style="font-size: small;">See course details</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="category-box border-4 border-dark shadow-lg pt-0 px-0 pb-2 position-relative h-100">
+                        <img src="/images/offimg2.jpeg" alt="employee" class="w-100 border border-2 borderr"/>
+                        <div class="d-flex gap-5 catep">
+                            <span class="border rounded-pill bg-white d-flex px-2 py-1 gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="#e97cb9" d="M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.7 15.7 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2" class="align-middle"/></svg>
+                            <h6 style="font-size: small;">Online</h6>
+                            </span>
+                            <span class="border rounded-pill bg-white d-flex px-2 py-1 gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><g fill="none"><path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="#e97cb9" d="M16 3a1 1 0 0 1 .993.883L17 4v1h2a2 2 0 0 1 1.995 1.85L21 7v12a2 2 0 0 1-1.85 1.995L19 21H5a2 2 0 0 1-1.995-1.85L3 19V7a2 2 0 0 1 1.85-1.995L5 5h2V4a1 1 0 0 1 1.993-.117L9 4v1h6V4a1 1 0 0 1 1-1m3 9H5v7h14zm0-5H5v3h14z" class="align-middle"/></g></svg>
+                            <h6 style="font-size: small;">12 Months</h6>
+                            </span>
+                        </div>
+                        <div class="px-2">
+                            <h4 class="fw-bold fs-6">Master of Arts (MA) in Project Management</h4>
+                            <p style="font-size: medium;">The programme's objective is to equip you with a deeper understanding of media and entertainment</p>
+                            <h4 class="fw-bold fs-4 pb-sm-5"> £120 <span class="text-decoration-line-through fs-4">£216</span></h4>
+                            <button class="btn-outline-dark shadow-lg custom-btn text-white border borderr p-3 w-100"><span style="font-size: small;">See course details</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="category-box border-4 border-dark shadow-lg pt-0 px-0 pb-2 position-relative h-100">
+                        <img src="/images/offimg1.jpeg" alt="employee" class="w-100 border border-2 borderr"/>
+                        <div class="d-flex gap-5 catep">
+                            <span class="border rounded-pill bg-white d-flex px-2 py-1 gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="#e97cb9" d="M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.7 15.7 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2" class="align-middle"/></svg>
+                            <h6 style="font-size: small;">Online</h6>
+                            </span>
+                            <span class="border rounded-pill bg-white d-flex px-2 py-1 gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><g fill="none"><path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="#e97cb9" d="M16 3a1 1 0 0 1 .993.883L17 4v1h2a2 2 0 0 1 1.995 1.85L21 7v12a2 2 0 0 1-1.85 1.995L19 21H5a2 2 0 0 1-1.995-1.85L3 19V7a2 2 0 0 1 1.85-1.995L5 5h2V4a1 1 0 0 1 1.993-.117L9 4v1h6V4a1 1 0 0 1 1-1m3 9H5v7h14zm0-5H5v3h14z" class="align-middle"/></g></svg>
+                            <h6 style="font-size: small;">12 Months</h6>
+                            </span>
+                        </div>
+                        <div class="px-2">
+                            <h4 class="fw-bold fs-6">Executive Master of Business Administration (EMBA) in Media and Entertainment</h4>
+                            <p class="fs-6">The programme's objective is to equip you with a deeper understanding of media and entertainment...</p>
+                            <h4 class="fw-bold fs-4 pb-sm-4"> £120 <span class="text-decoration-line-through fs-4">£216</span></h4>
+                            <button type="button" class="btn-outline-dark shadow-lg custom-btn text-white w-100 border borderr p-3"><span style="font-size: small;">See course details</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Explore Diploma Courses Section -->
+
+    <section class="pb-md-3 bg-light">
+        <div class="container px-0">
+            <div class="row g-4 pt-5">
+                <div class="col-md-3 position-relative text-white">
+                    <div class="category-box py-5 border-4 border-dark shadow-lg h-100" style="background-color:#eb4511; background-image: linear-gradient(315deg, #eb4511 0%, #b02e0c 100%);">
+                        <h1 class="fw-bolder w-50">Explore Diploma courses</h1>
+                        <p class="fs-6">Explore our newest programmes, focused on delivering in-demand skills</p>
+                        <button class="btn btn-outline-light px-2 py-3 border border-1 shadow-lg text-dark bg-white fw-bold w-100">Explore</button>
+                    </div>
+                    <img class="explore position-absolute"/>
+                </div>
+                <div class="col-md-3">
+                    <div class="category-box border-4 border-dark shadow-lg pt-0 px-0 pb-2 position-relative h-100">
+                        <img src="/images/offimg1.jpeg" alt="employee" class="w-100 border border-2 borderr"/>
+                        <div class="d-flex gap-5 catep">
+                            <span class="border rounded-pill bg-white d-flex px-2 py-1 gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="#e97cb9" d="M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.7 15.7 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2" class="align-middle"/></svg>
+                            <h6 style="font-size: small;">Online</h6>
+                            </span>
+                            <span class="border rounded-pill bg-white d-flex px-2 py-1 gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><g fill="none"><path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="#e97cb9" d="M16 3a1 1 0 0 1 .993.883L17 4v1h2a2 2 0 0 1 1.995 1.85L21 7v12a2 2 0 0 1-1.85 1.995L19 21H5a2 2 0 0 1-1.995-1.85L3 19V7a2 2 0 0 1 1.85-1.995L5 5h2V4a1 1 0 0 1 1.993-.117L9 4v1h6V4a1 1 0 0 1 1-1m3 9H5v7h14zm0-5H5v3h14z" class="align-middle"/></g></svg>
+                            <h6 style="font-size: small;">12 Months</h6>
+                            </span>
+                        </div>
+                        <div class="px-2">
+                            <h4 class="fw-bold fs-6">Executive Master of Business Administration (EMBA) in Media and Entertainment</h4>
+                            <p class="fs-6">The programme's objective is to equip you with a deeper understanding of entertainment management and media...</p>
+                            <h4 class="fw-bold fs-4 pb-sm-4"> £120 <span class="text-decoration-line-through fs-4">£216</span></h4>
+                            <button type="button" class="btn-outline-dark shadow-lg custom-btn text-white w-100 border borderr p-3"><span style="font-size: small;">See course details</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="category-box border-4 border-dark shadow-lg pt-0 px-0 pb-2 position-relative h-100">
+                        <img src="/images/offimg2.jpeg" alt="employee" class="w-100 border border-2 borderr"/>
+                        <div class="d-flex gap-5 catep">
+                            <span class="border rounded-pill bg-white d-flex px-2 py-1 gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="#e97cb9" d="M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.7 15.7 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2" class="align-middle"/></svg>
+                            <h6 style="font-size: small;">Online</h6>
+                            </span>
+                            <span class="border rounded-pill bg-white d-flex px-2 py-1 gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><g fill="none"><path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="#e97cb9" d="M16 3a1 1 0 0 1 .993.883L17 4v1h2a2 2 0 0 1 1.995 1.85L21 7v12a2 2 0 0 1-1.85 1.995L19 21H5a2 2 0 0 1-1.995-1.85L3 19V7a2 2 0 0 1 1.85-1.995L5 5h2V4a1 1 0 0 1 1.993-.117L9 4v1h6V4a1 1 0 0 1 1-1m3 9H5v7h14zm0-5H5v3h14z" class="align-middle"/></g></svg>
+                            <h6 style="font-size: small;">12 Months</h6>
+                            </span>
+                        </div>
+                        <div class="px-2">
+                            <h4 class="fw-bold fs-6">Master of Arts (MA) in Project Management</h4>
+                            <p style="font-size: medium;">The programme's objective is to equip you with a deeper understanding of media and entertainment</p>
+                            <h4 class="fw-bold fs-4 pb-sm-5"> £120 <span class="text-decoration-line-through fs-4">£216</span></h4>
+                            <button class="btn-outline-dark shadow-lg custom-btn text-white border borderr p-3 w-100"><span style="font-size: small;">See course details</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="category-box border-4 border-dark shadow-lg pt-0 px-0 pb-2 position-relative h-100">
+                        <img src="/images/offimg1.jpeg" alt="employee" class="w-100 border border-2 borderr"/>
+                        <div class="d-flex gap-5 catep">
+                            <span class="border rounded-pill bg-white d-flex px-2 py-1 gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="#e97cb9" d="M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.7 15.7 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2" class="align-middle"/></svg>
+                            <h6 style="font-size: small;">Online</h6>
+                            </span>
+                            <span class="border rounded-pill bg-white d-flex px-2 py-1 gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><g fill="none"><path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="#e97cb9" d="M16 3a1 1 0 0 1 .993.883L17 4v1h2a2 2 0 0 1 1.995 1.85L21 7v12a2 2 0 0 1-1.85 1.995L19 21H5a2 2 0 0 1-1.995-1.85L3 19V7a2 2 0 0 1 1.85-1.995L5 5h2V4a1 1 0 0 1 1.993-.117L9 4v1h6V4a1 1 0 0 1 1-1m3 9H5v7h14zm0-5H5v3h14z" class="align-middle"/></g></svg>
+                            <h6 style="font-size: small;">12 Months</h6>
+                            </span>
+                        </div>
+                        <div class="px-2">
+                            <h4 class="fw-bold fs-6">Executive Master of Business Administration (EMBA) in Media and Entertainment</h4>
+                            <p class="fs-6">The programme's objective is to equip you with a deeper understanding of media and entertainment...</p>
+                            <h4 class="fw-bold fs-4 pb-sm-4"> £120 <span class="text-decoration-line-through fs-4">£216</span></h4>
+                            <button type="button" class="btn-outline-dark shadow-lg custom-btn text-white w-100 border borderr p-3"><span style="font-size: small;">See course details</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How a Professional Certificate Works -->
+    <section class="pb-md-3 py-5">
+        <div class="container px-0">
+            <h1 class="fw-bold">How a Professional Certificate Works</h1>
+            <p>Upskill, reskill or pursue a passion with short courses across every subject, whether you're a beginner or already an expert.</p>
+            <div class="row g-4 pt-5">
+                <div class="col-md-3">
+                    <div class="category-box pb-5 border-4 border-dark shadow-lg h-100" style="background-color: #FFC72C;">
+                        <h2 class="fw-bold">Find the Right Program For Your Career</h2>
+                        <p class="pb-sm-3 pb-md-3">Professional Certificate programs are offered in a variety of in-demand subjects to help you get ahead.</p>
+                        <button class="btn btn-outline-light px-2 py-3 border border-1 shadow-lg text-dark bg-white fw-bold w-100">Explore</button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="category-box pb-5 border-4 border-dark shadow-lg h-100 text-white" style="background-color: #0000FF;">
+                        <h2 class="fw-bold">Learn & Gain Expertise at Your Own Pace</h2>
+                        <p class="pb-md-3 pb-sm-3">On your computer, tablet or phone, online courses make learning flexible to fit your busy life.</p>
+                        <button class="btn btn-outline-light px-2 py-3 border border-1 shadow-lg text-dark bg-white fw-bold w-100">Explore</button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="category-box pb-5 border-4 border-dark shadow-lg h-100 " style="background-color:#eb4511; background-image: linear-gradient(315deg, #eb4511 0%, #b02e0c 100%);">
+                        <h2 class="fw-bold">Earn a Valuable Credential</h2>
+                        <p class="pb-md-5 pb-sm-5">Showcase your skills and valuable knowledge.</p>
+                        <button class="btn btn-outline-light px-2 py-3 mt-sm-3 mt-md-3 border border-1 shadow-lg text-dark bg-white fw-bold w-100">Explore</button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="category-box pb-5 border-4 border-dark shadow-lg h-100 text-white" style="background-color:#008080;">
+                        <h2 class="fw-bold">Stand Out in Your Field</h2>
+                        <p class="pb-md-5 pb-sm-5">Use the knowledge and skills you have gained to drive impact at work and grow your career.</p>
+                        <button class="btn btn-outline-light px-2 py-3 border mt-sm-1 mt-md-1 border-1 shadow-lg text-dark bg-white fw-bold w-100">Explore</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Find the Right Course -->
+    <div class="container">
+        <div class="row pb-sm-5 pb-md-5 d-flex">
+            <div class="col-md-4">
+                <img src="/images/offimg2.jpeg" alt="Course Image" class="img-fluid w-100 border-3 borderr">
+            </div>
+            <div class="col-md-8 px-sm-5">
+                <h1>Find the right course for you</h1>
+                <div class="line"></div>
+                <p class="course-count">Choose from over <span class="fw-bolder">21,200 courses</span> and <span class="fw-bolder">Learning Paths,</span> dozens added each
+                    week.</p>
+
+                <div class="popular-topics">
+                    <h1 class="topic-title fw-bolder">Popular Topics</h1>
+                    <ul class="list-unstyled topic-list textc fw-bolder text-center">
+                        <li class="topic-item border p-2 border-danger bg-danger-subtle" style="width:max-content ; border-radius: 10px; background-color:cornsilk;">Business Management</li>
+                        <li class="topic-item border p-2 border-danger bg-danger-subtle" style="width:max-content ; border-radius: 10px; background-color:cornsilk;">Health and Psychology</li>
+                        <li class="topic-item border p-2 border-danger bg-danger-subtle" style="width:max-content ; border-radius: 10px; background-color:cornsilk;">Business Law</li>
+                        <li class="topic-item border p-2 border-danger bg-danger-subtle" style="width:max-content ; border-radius: 10px; background-color:cornsilk;">Information Technology</li>
+                        <li class="topic-item border p-2 border-danger bg-danger-subtle" style="width:max-content ; border-radius: 10px; background-color:cornsilk;">Personal Development</li>
+                        <li class="topic-item border p-2 border-danger bg-danger-subtle" style="width:max-content ; border-radius: 10px; background-color:cornsilk;">Teaching and Education</li>
+                        <li class="topic-item border p-2 border-danger bg-danger-subtle" style="width:max-content ; border-radius: 10px; background-color:cornsilk;">Finance and Accounting</li>
+                        <li class="topic-item border p-2 border-danger bg-danger-subtle" style="width:max-content ; border-radius: 10px; background-color:cornsilk;">Office Productivity</li>
+                        <li class="topic-item border p-2 border-danger bg-danger-subtle" style="width:max-content ; border-radius: 10px; background-color:cornsilk;">Sales and Marketing</li>
+                        <li class="topic-item border p-2 border-danger bg-danger-subtle" style="width:max-content ; border-radius: 10px; background-color:cornsilk;" style="width: fit-content;">Leadership and Entrepreneurship</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonial Section -->
+
+    <div class="container-fluid pb-md-5 pb-5" style="background-color:whitesmoke;">
+        <div class="story-section container">
+            <div>
+                <h1 class="text-danger fw-bolder">How learners like you are achieving their goals</h1>
+                <span class="">
+                    <div class="line"></div>
+                    <p>Participants in our courses don't just learn new skills, they enjoy the experience too.</p>
+                </span>
+            </div>
+            <div class="story-content" style="width: 98%;">
+                <div class="image-placeholder">
+                    <img src="/images//offimg1.jpeg" alt="Learner 1">
+                </div>
+                <div class="story-text">
+                    <h3 class="story-name fw-bold fst-italic">Andrew Samson</h3>
+                    <p class="story-details fw-lighter">Communication Manager, Pepsi</p>
+                    <p class="fw-bold">Executive Education</p>
+                    <div class="story-stars">★★★★★</div>
+                    <div class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+                        reiciendis repellat ullam voluptas accusantium maxime vel cupiditate,
+                        inventore recusandae soluta temporibus. Assumenda molestias
+                        sapiente aliquid voluptas id, ipsa, quia perspiciatis eaque laborum quis
+                        tempore modi deleniti ullam voluptatum numquam veniam tenetur fuga
+                        dolore quam molestiae et. Exercitationem architecto in dolorum!
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="story-content" style="width: 98%;">
+                    <div class="image-placeholder">
+                        <img src="/images//offimg1.jpeg" alt="Learner 1">
+                    </div>
+                    <div class="story-text">
+                        <h3 class="story-name fw-bold fst-italic">Andrew Samson</h3>
+                        <p class="story-details fw-lighter">Communication Manager, Pepsi</p>
+                        <p class="fw-bold">Executive Education</p>
+                        <div class="story-stars">★★★★★</div>
+                        <div class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+                            reiciendis repellat ullam voluptas accusantium maxime vel cupiditate,
+                            inventore recusandae soluta temporibus. Assumenda molestias
+                            sapiente aliquid voluptas id, ipsa, quia perspiciatis eaque laborum quis
+                            tempore modi deleniti ullam voluptatum numquam veniam tenetur fuga
+                            dolore quam molestiae et. Exercitationem architecto in dolorum!
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container ">
+            <div class="row pb-md-3 pb-3">
+                <!-- About Us -->
+                <div class="col-lg-4 col-md-6">
+                    <h5>About us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Our Mission and Vision</a></li>
+                        <li><a href="#">Our Partners</a></li>
+                        <li><a href="#">Become a Partner</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Reviews</a></li>
+                    </ul>
+                </div>
+                <!-- Popular Subjects -->
+                <div class="col-lg-4 col-md-6">
+                    <h5>Popular Subjects</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Business Management</a></li>
+                        <li><a href="#">Personal Development</a></li>
+                        <li><a href="#">Business Law</a></li>
+                        <li><a href="#">Sales and Marketing</a></li>
+                        <li><a href="#">Office Productivity</a></li>
+                    </ul>
+                </div>
+                <!-- Small Prints -->
+                <div class="col-lg-4 col-md-6">
+                    <h5>Small Prints</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="vr">
+            <!-- Newsletter Section -->
+            <div class="row newsletter align-content-center">
+                <div class="col-md-6">
+                    <h5>Sign up to our newsletter</h5>
+                    <p class="text-white">Stay up to date with the latest news, announcements, and articles.</p>
+                </div>
+                <div class="col-md-6 position-relative">
+                    <form class="d-flex">
+                        <input type="email" class="form-control me-2" placeholder="Enter your email address" required>
+                        <button type="submit" class="btn btn-danger position-absolute bottom-0 end-0" style="margin-bottom: 34px;">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="vr">
+            <!-- Social Icons and Copyright -->
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-facebook text-danger px-1 border rounded-circle" style="background-color: white;"></i></a>
+                        <a href="#"><i class="bi bi-instagram text-danger px-1 border rounded-circle" style="background-color: white;"></i></a>
+                        <a href="#"><i class="bi bi-linkedin text-danger px-1 border rounded-circle" style="background-color: white;"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-5 text-end">
+                    <p class="copyright text-white">&copy; SkillKernel 2023. All rights reserved.</p>
+                </div>
+                <div class="text-end mx-0" style="margin-top: -20px;">
+                    <a href="#"><i class="bi bi-cart text-secondary position-relative p-3 border rounded-circle border-white border-3"></i>
+                      <span class=" position-absolute text-white border bg-danger border-0 px-1 rounded-circle" style="font-size: 10px; margin-left: -25px; margin-top: 10px;">10</span> <!-- 10<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill text-white" style="background-color: red;">10 <span class="visually-hidden">number of items</span></span> -->
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
